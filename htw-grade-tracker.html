@@ -1,0 +1,141 @@
+HTW Saar Grade Tracker Dieses Python-Script überprüft automatisch die
+Leistungsübersicht im HTW SIM-Portal und sendet eine Telegram-Nachricht, sobald
+eine neue Note eingetragen wurde. Das Script ist dafür gedacht, regelmäßig (z.B.
+per Cronjob) ausgeführt zu werden. Features automatischer Login ins HTW SIM
+Portal Download der Leistungsübersicht als PDF Extraktion der Noten aus dem PDF
+Vergleich mit vorherigem Stand Telegram Benachrichtigung bei neuen Noten
+Headless Browser (läuft ohne sichtbares Fenster) Cronjob kompatibe
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTW Grade Tracker | Luca Britten</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header id="navbar">
+      <div class="nav-left">Luca Britten</div>
+
+      <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="https://github.com/lucabritten" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/britten-luca/" target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+    </header>
+
+    <section class="project-detail">
+      <div class="project-hero">
+        <h1 class="section-title">HTW Saar Grade Tracker</h1>
+        <p class="project-subtitle">
+          A Python automation script that monitors the HTW Saar SIM portal and
+          sends a Telegram notification whenever a new grade is published.
+        </p>
+      </div>
+
+      <div class="project-content">
+        <div class="project-description">
+          <h2>Description</h2>
+
+          <p>
+            The HTW Grade Tracker is a small automation tool that regularly
+            checks the student portal of HTW Saar for newly published exam
+            grades. The script logs into the SIM portal, downloads the
+            transcript PDF and extracts the grade information automatically.
+          </p>
+
+          <p>
+            By comparing the extracted data with the previously saved state, the
+            script detects newly added grades and immediately sends a Telegram
+            notification to the user. This allows students to get notified
+            instantly without manually checking the portal.
+          </p>
+
+          <p>
+            The tool is designed to run automatically on a schedule using a cron
+            job and operates with a headless browser, making it suitable for
+            deployment on servers or small automation environments.
+          </p>
+        </div>
+
+        <div class="project-screenshots">
+          <h2>Screenshots</h2>
+
+          <div class="screenshot-grid">
+            <div class="screenshot-placeholder">Login Automation</div>
+            <div class="screenshot-placeholder">Telegram Notification</div>
+          </div>
+        </div>
+
+        <div class="project-links-section">
+          <h2>Project Links</h2>
+
+          <div class="project-buttons">
+            <a
+              href="https://github.com/lucabritten/HTW_SIM_Grade_tracker"
+              class="project-btn secondary"
+              >GitHub Repository</a
+            >
+          </div>
+        </div>
+
+        <div class="project-features">
+          <h2>Key Features</h2>
+
+          <ul class="feature-list">
+            <li>
+              <strong>Automated Portal Login</strong><br />
+              Logs into the HTW Saar SIM portal automatically using a headless
+              browser session.
+            </li>
+
+            <li>
+              <strong>PDF Grade Extraction</strong><br />
+              Downloads the transcript PDF and extracts grade information for
+              automated processing.
+            </li>
+
+            <li>
+              <strong>Change Detection</strong><br />
+              Compares the current grade state with previously stored results to
+              detect newly published grades.
+            </li>
+
+            <li>
+              <strong>Telegram Notifications</strong><br />
+              Sends instant notifications through Telegram whenever a new grade
+              appears.
+            </li>
+
+            <li>
+              <strong>Cronjob Automation</strong><br />
+              Designed to run automatically on a schedule using cron jobs.
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-tech">
+          <h2>Tech Stack</h2>
+
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>Selenium</li>
+            <li>PDF Parsing</li>
+            <li>Telegram Bot API</li>
+            <li>Linux / Cron</li>
+          </ul>
+        </div>
+
+        <div class="back-link">
+          <a href="index.html">← Back to Portfolio</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luca Britten | Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header id="navbar">
+      <div class="nav-left">Luca Britten</div>
+      <div class="nav-right">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/lucabritten" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/britten-luca/" target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+    </header>
+
+    <section id="hero">
+      <div id="hero-content">
+        <h1 id="head-name">Luca Britten</h1>
+        <p id="subtitle">Software Developer</p>
+
+        <p class="hero-intro">
+          Backend-focused developer working with Java and Python, building
+          performant systems and algorithmic solutions.
+        </p>
+        <div id="scroll-indicator">↓</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>F1 Insight Tool</h3>
+          <p>Formula 1 CLI-/Web-Tool to analyze data.</p>
+
+          <div class="project-links">
+            <a href="f1-tool.html">Details</a>
+            <a href="https://github.com/lucabritten/f1-insight-tool">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>HTW-SIM Grade Tracker</h3>
+          <p>Python script to track grades.</p>
+
+          <div class="project-links">
+            <a href="htw-grade-tracker.html">Details</a>
+            <a href="https://github.com/lucabritten/HTW_SIM_Grade_tracker"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>FIT Combiner</h3>
+          <p>Java tool to merge multiple Garmin .fit activity files.</p>
+
+          <div class="project-links">
+            <a href="fit-combiner.html">Details</a>
+            <a href="https://github.com/lucabritten">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">Java</div>
+        <div class="skill-card">Maven</div>
+        <div class="skill-card">Spring Boot</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">SQLite3</div>
+        <div class="skill-card">Postgres</div>
+        <div class="skill-card">Git</div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-content">
+        <p>
+          I'm a software developer focused on backend development, algorithms
+          and building reliable systems. Most of my work involves Java and
+          Python, where I enjoy designing efficient logic and solving complex
+          problems.
+        </p>
+
+        <p>
+          I'm particularly interested in data structures, system design and
+          developing applications that prioritize performance and scalability.
+        </p>
+
+        <p>
+          Outside of web applications, I’m also interested in robotics and
+          technical systems where software interacts with hardware and
+          real-world environments.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <form action="https://formspree.io/f/mvzwqvdr" method="POST">
+        <label>
+          Your Name:
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Your email:
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Your message:
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <input type="hidden" name="_subject" value="Portfolio Contact Form" />
+        <input type="text" name="_gotcha" style="display: none" />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>© 2026 Luca Britten</p>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://github.com/lucabritten" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/britten-luca/" target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+
+        <div class="footer-links">
+          <a href="datenschutz.html">Privacy Policy</a>
+          <a href="impressum.html">Imprint</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
